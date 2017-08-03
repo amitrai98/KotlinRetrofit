@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.amitrai.kotlinapirequest.ui.BaseActivity"
+    tools:showIn="@layout/activity_base">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="2dp">
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edt_email"
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:hint="Email"/>
+            <EditText
+                android:id="@+id/edt_password"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:imeOptions="actionDone"
+                android:hint="Passwrod"/>
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/remember_me"
+                android:layout_margin="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RememberMe"/>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"/>
+
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register"/>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
