@@ -20,4 +20,9 @@ class Data : BaseBean() {
     @SerializedName("createdAt")
     @Expose
     var createdAt: String? = null
+
+  @SerializedName("message")
+    @Expose
+    var message: String? = null
+
 }

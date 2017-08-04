@@ -57,7 +57,7 @@ class BaseActivity : AppCompatActivity(), ApiCallback, View.OnClickListener {
         if (pd.isShowing)
             pd.dismiss()
         Log.e("BASE ACTIVITY", message)
-        showSnackBar("Error in login "+message)
+        showSnackBar(message)
     }
 
     override fun onClick(p0: View?) {
